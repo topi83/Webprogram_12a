@@ -16,10 +16,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    color: white;
 }
 
 .container {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     width: 75%;
     display: flex;
     flex-direction: column;
@@ -36,4 +37,30 @@ body {
 .img-fluid{
     max-width: 100%;
     height: auto;
+}
+
+.message-box, .custom-button{
+width: 100%;
+height: 4rem;
+border-radius: 0.5rem;
+text-align: center;
+line-height: 4rem;
+border: none;
+}
+
+.message-box{
+    background-color: #23AF6B;
+    font-size: 1.5rem;
+}
+
+.custom-button{
+    background-color: #198754;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: filter 0.5s ease;
+}
+
+.custom-button:hover{   
+    filter: grayscale(50%);
 }
